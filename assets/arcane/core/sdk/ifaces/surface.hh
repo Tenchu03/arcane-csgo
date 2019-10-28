@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../misc/macros.hh"
-#include "../../dependencies/fgui/FGUI.hh"
+#include "../../../dependencies/fgui/FGUI.hh"
 
 namespace arcane::sdk::ifaces {
 	// https://github.com/ValveSoftware/source-sdk-2013/blob/master/sp/src/public/vgui/ISurface.h
@@ -13,7 +13,7 @@ namespace arcane::sdk::ifaces {
 		VFUNC( draw_filled_rectangle( const std::int32_t x, const std::int32_t y, const std::int32_t w, const std::int32_t h ), 16, void( __thiscall* )( void*, std::int32_t, std::int32_t, std::int32_t, std::int32_t ), x, y, w, h );
 		VFUNC( draw_outlined_rectangle( const std::int32_t x, const std::int32_t y, const std::int32_t w, const std::int32_t h ), 18, void( __thiscall* )( void*, std::int32_t, std::int32_t, std::int32_t, std::int32_t ), x, y, w, h );
 		VFUNC( draw_line( const std::int32_t x, const std::int32_t y, const std::int32_t w, const std::int32_t h ), 19, void( __thiscall* )( void*, std::int32_t, std::int32_t, std::int32_t, std::int32_t ), x, y, w, h );
-		VFUNC( draw_set_text_font( const DWORD font ), 23, void( __thiscall* )( void*, DWORD ), font );
+		VFUNC( draw_set_text_font( const unsigned long font ), 23, void( __thiscall* )( void*, unsigned long ), font );
 		VFUNC( draw_set_text_color( const std::int32_t r, const std::int32_t g, const std::int32_t b, const std::int32_t a ), 25, void( __thiscall* )( void*, std::int32_t, std::int32_t, std::int32_t, std::int32_t ), r, g, b, a );
 		VFUNC( draw_set_text_pos( const std::int32_t x, const std::int32_t y ), 26, void( __thiscall* )( void*, std::int32_t, std::int32_t ), x, y );
 		VFUNC( draw_print_text( const wchar_t* text, const std::int32_t len ), 28, void( __thiscall* )( void*, const wchar_t*, std::int32_t, std::int32_t ), text, len, 0 );
@@ -24,9 +24,9 @@ namespace arcane::sdk::ifaces {
 		VFUNC( is_texture_id_valid( const std::int32_t texture_id ), 42, bool( __thiscall* )( void*, std::int32_t ), texture_id );
 		VFUNC( create_new_texture_id( const bool is_procedural ), 43, std::int32_t( __thiscall* )( void*, bool ), is_procedural );
 		VFUNC( get_screen_size( std::int32_t& x, std::int32_t& y ), 44, void( __thiscall* )( void*, std::int32_t&, std::int32_t& ), x, y );
-		VFUNC( create_font( ), 71, DWORD( __thiscall* )( void* ) );
-		VFUNC( set_font_glyph_set( const DWORD font, const char* font_name, const std::int32_t tall, const std::int32_t weight, const std::int32_t blur, const std::int32_t scan_lines, const std::int32_t flags, const std:: int32_t min_range, const std::int32_t max_range ), 72, void( __thiscall* )( void*, DWORD, const char*, std::int32_t, std::int32_t, std::int32_t, std::int32_t, std:: int32_t, std::int32_t, std::int32_t ), font, font_name, tall, weight, blur, scan_lines, flags, min_range, max_range );
-		VFUNC( get_text_size( const DWORD font, const wchar_t* text, std::int32_t& wide, std::int32_t& tall ), 79, void( __thiscall* )( void*, DWORD, const wchar_t*, std::int32_t&, std::int32_t& ), font, text, wide, tall );
+		VFUNC( create_font( ), 71, unsigned long( __thiscall* )( void* ) );
+		VFUNC( set_font_glyph_set( const unsigned long font, const char* font_name, const std::int32_t tall, const std::int32_t weight, const std::int32_t blur, const std::int32_t scan_lines, const std::int32_t flags, const std:: int32_t min_range, const std::int32_t max_range ), 72, void( __thiscall* )( void*, unsigned long, const char*, std::int32_t, std::int32_t, std::int32_t, std::int32_t, std:: int32_t, std::int32_t, std::int32_t ), font, font_name, tall, weight, blur, scan_lines, flags, min_range, max_range );
+		VFUNC( get_text_size( const unsigned long font, const wchar_t* text, std::int32_t& wide, std::int32_t& tall ), 79, void( __thiscall* )( void*, unsigned long, const wchar_t*, std::int32_t&, std::int32_t& ), font, text, wide, tall );
 		VFUNC( play_sound(const char* file_name), 82, void(__thiscall*)(void*, const char*), file_name );
 		VFUNC( get_cursor_position(std::int32_t& x, std::int32_t& y), 100, void(__thiscall*)(void*, std::int32_t&, std::int32_t&), x, y );
 		VFUNC( draw_outlined_circle( const std::int32_t x, const std::int32_t y, const std::int32_t w, const std::int32_t h ), 103, void( __thiscall* )( void*, std::int32_t, std::int32_t, std::int32_t, std::int32_t ), x, y, w, h );

@@ -15,7 +15,7 @@ namespace arcane::sdk::misc {
 	extern void outlined_rectangle( std::int32_t, std::int32_t, std::int32_t, std::int32_t, fgui::color );
 	extern void line( std::int32_t, std::int32_t, std::int32_t, std::int32_t, fgui::color );
 	extern void polygon( std::int32_t, fgui::vertex*, fgui::color );
-	extern void text( std::int32_t, std::int32_t, fgui::color, DWORD, std::string_view );
+	extern void text( std::int32_t, std::int32_t, fgui::color, unsigned long, std::string_view );
 	extern void circle( std::int32_t, std::int32_t, std::int32_t, std::int32_t, fgui::color );
 	extern void gradient( std::int32_t, std::int32_t, std::int32_t, std::int32_t, std::int32_t, std::int32_t, fgui::color, bool );
 	extern void colored_gradient( std::int32_t, std::int32_t, std::int32_t, std::int32_t, fgui::color, fgui::color, bool );

@@ -27,7 +27,7 @@ namespace arcane::sdk::misc {
 
 			const auto prop_info = std::make_shared< node >( prop->offset );
 
-			if ( prop->recv_type == CONV_TO_TYPE( std::int32_t, enums::send_prop_type::send_prop_type_data_table ) )
+			if ( prop->recv_type == CONV_ENUM_TYPE( std::int32_t, enums::send_prop_type::send_prop_type_data_table ) )
 				populate_nodes( prop->data_table, &prop_info->nodes );
 
 			map->emplace( prop->var_name, prop_info );

@@ -58,6 +58,9 @@
     <Filter Include="core\sdk\misc">
       <UniqueIdentifier>{f77e6c1e-22ad-415f-87ee-f8550fa4d669}</UniqueIdentifier>
     </Filter>
+    <Filter Include="dependencies\fmt">
+      <UniqueIdentifier>{be4cdbcf-3249-426a-862f-cbe73948e552}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="core\entry.cc">
@@ -373,6 +376,42 @@
     </ClInclude>
     <ClInclude Include="core\sdk\sdk.hh">
       <Filter>core\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fmt\chrono.hh">
+      <Filter>dependencies\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fmt\color.hh">
+      <Filter>dependencies\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fmt\compile.hh">
+      <Filter>dependencies\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fmt\core.hh">
+      <Filter>dependencies\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fmt\format.hh">
+      <Filter>dependencies\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fmt\format-inl.hh">
+      <Filter>dependencies\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fmt\locale.hh">
+      <Filter>dependencies\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fmt\ostream.hh">
+      <Filter>dependencies\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fmt\posix.hh">
+      <Filter>dependencies\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fmt\printf.hh">
+      <Filter>dependencies\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fmt\ranges.hh">
+      <Filter>dependencies\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fmt\safe-duration-cast.hh">
+      <Filter>dependencies\fmt</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

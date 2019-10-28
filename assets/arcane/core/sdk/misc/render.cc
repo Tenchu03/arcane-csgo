@@ -45,7 +45,7 @@ namespace arcane::sdk::misc {
 		core::ifaces::get_ifaces.surface->draw_textured_polygon( count, vertex, true );
 	}
 
-	void text( const std::int32_t x, const std::int32_t y, const fgui::color color, const DWORD font, const std::string_view text ) {
+	void text( const std::int32_t x, const std::int32_t y, const fgui::color color, const unsigned long font, const std::string_view text ) {
 		const auto converted_text = std::wstring( text.begin( ), text.end( ) );
 
 		core::ifaces::get_ifaces.surface->draw_set_text_color( color.m_red, color.m_green, color.m_blue, color.m_alpha );
@@ -112,10 +112,10 @@ namespace arcane::sdk::misc {
 		fgui::render.alpha = get_alpha_value;
 		fgui::render.clip_rect = clip_rectangle;
 
-		fonts.push_back( CONV_TO_TYPE( std::int32_t, enums::font::font_watermark ) );
-		fonts.push_back( CONV_TO_TYPE( std::int32_t, enums::font::font_visuals ) );
+		fonts.push_back( CONV_ENUM_TYPE( std::int32_t, enums::font::font_watermark ) );
+		fonts.push_back( CONV_ENUM_TYPE( std::int32_t, enums::font::font_visuals ) );
 
-		fgui::render.create_font( fonts[ CONV_TO_TYPE( std::int32_t, enums::font::font_watermark ) ], "Tahoma", 12, fgui::external::font_flags::SHADOW, false );
-		fgui::render.create_font( fonts[ CONV_TO_TYPE( std::int32_t, enums::font::font_visuals ) ], "Tahoma", 16, fgui::external::font_flags::SHADOW, false );
+		fgui::render.create_font( fonts[ CONV_ENUM_TYPE( std::int32_t, enums::font::font_watermark ) ], "Tahoma", 12, fgui::external::font_flags::SHADOW, false );
+		fgui::render.create_font( fonts[ CONV_ENUM_TYPE( std::int32_t, enums::font::font_visuals ) ], "Tahoma", 16, fgui::external::font_flags::SHADOW, false );
 	}
 }

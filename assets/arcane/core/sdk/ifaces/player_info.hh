@@ -22,7 +22,7 @@ namespace arcane::sdk::ifaces {
 
 		PAD( pad, 16 );
 
-		DWORD friends_id;
+		unsigned long friends_id;
 
 		char friends_name[ 128 ];
 

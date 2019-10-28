@@ -125,6 +125,18 @@
     <ClInclude Include="dependencies\fgui\FGUI.hh" />
     <ClInclude Include="dependencies\fgui\handler\handler.hh" />
     <ClInclude Include="dependencies\fgui\notifications\notifications.hh" />
+    <ClInclude Include="dependencies\fmt\chrono.hh" />
+    <ClInclude Include="dependencies\fmt\color.hh" />
+    <ClInclude Include="dependencies\fmt\compile.hh" />
+    <ClInclude Include="dependencies\fmt\core.hh" />
+    <ClInclude Include="dependencies\fmt\format-inl.hh" />
+    <ClInclude Include="dependencies\fmt\format.hh" />
+    <ClInclude Include="dependencies\fmt\locale.hh" />
+    <ClInclude Include="dependencies\fmt\ostream.hh" />
+    <ClInclude Include="dependencies\fmt\posix.hh" />
+    <ClInclude Include="dependencies\fmt\printf.hh" />
+    <ClInclude Include="dependencies\fmt\ranges.hh" />
+    <ClInclude Include="dependencies\fmt\safe-duration-cast.hh" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

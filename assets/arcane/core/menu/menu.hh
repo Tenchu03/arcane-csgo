@@ -6,7 +6,7 @@
 #include <cstdint>
 
 #include "../features/features.hh"
-#include "../../fgui/FGUI.hh"
+#include "../../dependencies/fgui/FGUI.hh"
 
 namespace arcane::core::menu {
 	inline std::unordered_map< std::string, std::shared_ptr< fgui::button > > button;

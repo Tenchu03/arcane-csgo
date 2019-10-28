@@ -3,7 +3,7 @@
 namespace arcane::sdk::enums {
 	// https://github.com/ValveSoftware/source-sdk-2013/blob/master/sp/src/public/dt_common.h
 	
-	enum send_prop_type {
+	enum class send_prop_type {
 		send_prop_type_int = 0,
 		send_prop_type_float,
 		send_prop_type_vector,

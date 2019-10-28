@@ -3,7 +3,7 @@
 namespace arcane::sdk::enums {
 	// https://github.com/ValveSoftware/source-sdk-2013/blob/master/mp/src/public/const.h
 	
-	enum flags {
+	enum class flags {
 		flags_on_ground = ( 1 << 0 ),
 		flags_ducking = ( 1 << 1 ),
 		flags_water_jump = ( 1 << 2 ),

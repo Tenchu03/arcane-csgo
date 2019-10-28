@@ -13,9 +13,9 @@ namespace arcane::core::features {
 		if ( !( local_player->get_health( ) > 0 ) )
 			return;
 
-		if ( cmd->buttons & sdk::enums::button_jump ) {
-			if ( !( local_player->get_flags( ) & sdk::enums::flags_on_ground ) )
-				cmd->buttons &= ~sdk::enums::button_jump;
+		if ( cmd->buttons & CONV_TO_TYPE( std::int32_t, sdk::enums::button::button_jump ) ) {
+			if ( !( local_player->get_flags( ) & CONV_TO_TYPE( std::int32_t, sdk::enums::flags::flags_on_ground ) ) )
+				cmd->buttons &= ~CONV_TO_TYPE( std::int32_t, sdk::enums::button::button_jump );
 		}
 	}
 

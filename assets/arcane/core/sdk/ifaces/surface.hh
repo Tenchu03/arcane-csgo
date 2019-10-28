@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../misc/macros.hh"
-#include "../../fgui/FGUI.hh"
+#include "../../dependencies/fgui/FGUI.hh"
 
 namespace arcane::sdk::ifaces {
 	// https://github.com/ValveSoftware/source-sdk-2013/blob/master/sp/src/public/vgui/ISurface.h

@@ -3,7 +3,7 @@
 namespace arcane::sdk::enums {
 	// https://github.com/ValveSoftware/source-sdk-2013/blob/master/mp/src/public/const.h
 	
-	enum move {
+	enum class move {
 		move_none = 0,
 		move_isometric,
 		move_walk,

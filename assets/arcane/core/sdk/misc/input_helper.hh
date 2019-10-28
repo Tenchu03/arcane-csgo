@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../../core/ifaces/ifaces.hh"
-#include "../../fgui/dependencies/definitions.hh"
+#include "../../ifaces/ifaces.hh"
+#include "../../../dependencies/fgui/FGUI.hh"
 
 namespace arcane::sdk::misc {
 	extern fgui::state get_key_state( const fgui::key& );

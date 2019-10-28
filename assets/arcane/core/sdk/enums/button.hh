@@ -3,7 +3,7 @@
 namespace arcane::sdk::enums {
 	// https://github.com/ValveSoftware/source-sdk-2013/blob/master/mp/src/game/shared/in_buttons.h#L15
 	
-	enum button {
+	enum class button {
 		button_attack = ( 1 << 0 ),
 		button_jump = ( 1 << 1 ),
 		button_duck = ( 1 << 2 ),

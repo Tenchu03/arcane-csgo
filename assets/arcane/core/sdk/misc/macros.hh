@@ -49,3 +49,6 @@
 	{ \
 		return arcane::sdk::misc::vfunc_from_index< type >( this, index )( this, __VA_ARGS__ ); \
 	};
+
+#define CONV_TO_TYPE( type, enum_class ) \
+    static_cast< type >( enum_class )

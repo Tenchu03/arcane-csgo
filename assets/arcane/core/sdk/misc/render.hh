@@ -2,9 +2,8 @@
 
 #include <vector>
 
-#include "../../fgui/dependencies/definitions.hh"
-#include "../../fgui/dependencies/color.hh"
-#include "../../core/ifaces/ifaces.hh"
+#include "../../ifaces/ifaces.hh"
+#include "../../../dependencies/fgui/FGUI.hh"
 
 namespace arcane::sdk::misc {
 	inline std::vector< fgui::font > fonts;

@@ -112,10 +112,10 @@ namespace arcane::sdk::misc {
 		fgui::render.alpha = get_alpha_value;
 		fgui::render.clip_rect = clip_rectangle;
 
-		fonts.emplace_back( enums::font_watermark );
-		fonts.emplace_back( enums::font_visuals );
+		fonts.push_back( CONV_TO_TYPE( std::int32_t, enums::font::font_watermark ) );
+		fonts.push_back( CONV_TO_TYPE( std::int32_t, enums::font::font_visuals ) );
 
-		fgui::render.create_font( fonts[ enums::font_watermark ], "Tahoma", 12, fgui::external::font_flags::SHADOW, false );
-		fgui::render.create_font( fonts[ enums::font_visuals ], "Tahoma", 16, fgui::external::font_flags::SHADOW, false );
+		fgui::render.create_font( fonts[ CONV_TO_TYPE( std::int32_t, enums::font::font_watermark ) ], "Tahoma", 12, fgui::external::font_flags::SHADOW, false );
+		fgui::render.create_font( fonts[ CONV_TO_TYPE( std::int32_t, enums::font::font_visuals ) ], "Tahoma", 16, fgui::external::font_flags::SHADOW, false );
 	}
 }

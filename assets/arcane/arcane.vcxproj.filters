@@ -4,38 +4,11 @@
     <Filter Include="core">
       <UniqueIdentifier>{0fd4e681-e393-4119-aa69-3d3e124c4bc4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="sdk">
-      <UniqueIdentifier>{a0bbd5e3-7c70-4471-a423-a7cb865859c7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="core\hooks">
       <UniqueIdentifier>{212e5261-0986-46c3-99cf-4a64566a25f4}</UniqueIdentifier>
     </Filter>
     <Filter Include="core\hooks\hooked">
       <UniqueIdentifier>{7fd44db7-9a5b-443d-8446-32eb41d3ac0a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="sdk\misc">
-      <UniqueIdentifier>{f2c67ba2-4bca-48dc-a2f1-d08b590b1868}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="sdk\enums">
-      <UniqueIdentifier>{02f8880d-0661-445f-bcba-85434f6362f1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="fmt">
-      <UniqueIdentifier>{2e6cb798-f652-4cdf-b367-034154e63e09}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="fgui">
-      <UniqueIdentifier>{13e00a23-4280-4147-8ea7-7b0247cf066f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="fgui\controls">
-      <UniqueIdentifier>{1133e0a0-9562-41d4-a07e-5067b3080f02}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="fgui\dependencies">
-      <UniqueIdentifier>{d8013b3b-7593-4c9b-8048-b9f9b00bc37b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="fgui\handler">
-      <UniqueIdentifier>{49134aae-9fe5-4423-9c70-0589d4cb9249}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="fgui\notifications">
-      <UniqueIdentifier>{bd538696-b90e-4db5-948f-7eeea790e128}</UniqueIdentifier>
     </Filter>
     <Filter Include="core\menu">
       <UniqueIdentifier>{ee3fcae1-779c-4cf7-aae2-85d0f6033135}</UniqueIdentifier>
@@ -52,11 +25,38 @@
     <Filter Include="core\mem">
       <UniqueIdentifier>{50227740-eb9e-4b0e-a9a9-6918414f1e94}</UniqueIdentifier>
     </Filter>
-    <Filter Include="sdk\ifaces">
-      <UniqueIdentifier>{30ff8afa-2764-42e1-83c8-6de61aa19a20}</UniqueIdentifier>
-    </Filter>
     <Filter Include="core\main">
       <UniqueIdentifier>{6bbad5c0-7aad-4705-aa44-1db15c736988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies">
+      <UniqueIdentifier>{8ab1b50e-7c6c-4b19-b7b8-59cb28f4ef5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\fgui">
+      <UniqueIdentifier>{9b2bce94-8ab3-4fd4-a068-1b9b27c67d5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\fgui\controls">
+      <UniqueIdentifier>{5e8de0d7-cad5-4972-99be-dfae0672a164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\fgui\handler">
+      <UniqueIdentifier>{13f1e2f5-d4a8-4256-aea6-4cc06575bae8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\fgui\notifications">
+      <UniqueIdentifier>{c33e5249-cb59-4206-8451-d52421feb751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\fgui\dependencies">
+      <UniqueIdentifier>{b71bae01-311f-4cd9-a98a-5d06e0283a71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk">
+      <UniqueIdentifier>{fe280478-8510-4cad-a8bf-c024d054afbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\enums">
+      <UniqueIdentifier>{4b71fbf1-dd64-4fc6-a6ea-4b98960b6951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\ifaces">
+      <UniqueIdentifier>{95469504-cbe1-4462-bef2-ea3e6e4beff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\misc">
+      <UniqueIdentifier>{f77e6c1e-22ad-415f-87ee-f8550fa4d669}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -78,57 +78,6 @@
     <ClCompile Include="core\hooks\hooked\scene_end.cc">
       <Filter>core\hooks\hooked</Filter>
     </ClCompile>
-    <ClCompile Include="fgui\controls\button.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\checkbox.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\colorlist.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\colorpicker.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\combobox.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\container.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\element.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\keybinder.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\label.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\listbox.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\multibox.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\slider.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\spinner.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\tabs.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\controls\textbox.cc">
-      <Filter>fgui\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\handler\handler.cc">
-      <Filter>fgui\handler</Filter>
-    </ClCompile>
-    <ClCompile Include="fgui\notifications\notifications.cc">
-      <Filter>fgui\notifications</Filter>
-    </ClCompile>
     <ClCompile Include="core\hooks\hooked\emit_sound.cc">
       <Filter>core\hooks\hooked</Filter>
     </ClCompile>
@@ -147,170 +96,71 @@
     <ClCompile Include="core\features\core\visuals.cc">
       <Filter>core\features\core</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\misc\input_helper.cc">
-      <Filter>sdk\misc</Filter>
-    </ClCompile>
-    <ClCompile Include="sdk\misc\netvar_tree.cc">
-      <Filter>sdk\misc</Filter>
-    </ClCompile>
-    <ClCompile Include="sdk\misc\render.cc">
-      <Filter>sdk\misc</Filter>
-    </ClCompile>
     <ClCompile Include="core\main\main.cc">
       <Filter>core\main</Filter>
     </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\button.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\checkbox.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\colorlist.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\colorpicker.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\combobox.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\container.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\element.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\keybinder.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\label.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\listbox.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\multibox.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\slider.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\spinner.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\tabs.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\controls\textbox.cc">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\notifications\notifications.cc">
+      <Filter>dependencies\fgui\notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\fgui\handler\handler.cc">
+      <Filter>dependencies\fgui\handler</Filter>
+    </ClCompile>
+    <ClCompile Include="core\sdk\misc\input_helper.cc">
+      <Filter>core\sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="core\sdk\misc\netvar_tree.cc">
+      <Filter>core\sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="core\sdk\misc\render.cc">
+      <Filter>core\sdk\misc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sdk\sdk.hh">
-      <Filter>sdk</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\misc\render.hh">
-      <Filter>sdk\misc</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\enums\button.hh">
-      <Filter>sdk\enums</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\enums\flags.hh">
-      <Filter>sdk\enums</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\enums\move.hh">
-      <Filter>sdk\enums</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\misc\vmt_hook.hh">
-      <Filter>sdk\misc</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\misc\vector.hh">
-      <Filter>sdk\misc</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\enums\analog_code.hh">
-      <Filter>sdk\enums</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\misc\macros.hh">
-      <Filter>sdk\misc</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\enums\client_frame_stage.hh">
-      <Filter>sdk\enums</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\enums\font.hh">
-      <Filter>sdk\enums</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\misc\vfunc_from_index.hh">
-      <Filter>sdk\misc</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\misc\capture_iface.hh">
-      <Filter>sdk\misc</Filter>
-    </ClInclude>
-    <ClInclude Include="fmt\chrono.hh">
-      <Filter>fmt</Filter>
-    </ClInclude>
-    <ClInclude Include="fmt\color.hh">
-      <Filter>fmt</Filter>
-    </ClInclude>
-    <ClInclude Include="fmt\compile.hh">
-      <Filter>fmt</Filter>
-    </ClInclude>
-    <ClInclude Include="fmt\core.hh">
-      <Filter>fmt</Filter>
-    </ClInclude>
-    <ClInclude Include="fmt\format.hh">
-      <Filter>fmt</Filter>
-    </ClInclude>
-    <ClInclude Include="fmt\format-inl.hh">
-      <Filter>fmt</Filter>
-    </ClInclude>
-    <ClInclude Include="fmt\locale.hh">
-      <Filter>fmt</Filter>
-    </ClInclude>
-    <ClInclude Include="fmt\ostream.hh">
-      <Filter>fmt</Filter>
-    </ClInclude>
-    <ClInclude Include="fmt\posix.hh">
-      <Filter>fmt</Filter>
-    </ClInclude>
-    <ClInclude Include="fmt\printf.hh">
-      <Filter>fmt</Filter>
-    </ClInclude>
-    <ClInclude Include="fmt\ranges.hh">
-      <Filter>fmt</Filter>
-    </ClInclude>
-    <ClInclude Include="fmt\safe-duration-cast.hh">
-      <Filter>fmt</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\FGUI.hh">
-      <Filter>fgui</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\button.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\checkbox.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\colorlist.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\colorpicker.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\combobox.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\container.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\element.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\keybinder.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\label.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\listbox.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\multibox.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\slider.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\spinner.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\tabs.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\controls\textbox.hh">
-      <Filter>fgui\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\dependencies\aliases.hh">
-      <Filter>fgui\dependencies</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\dependencies\color.hh">
-      <Filter>fgui\dependencies</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\dependencies\definitions.hh">
-      <Filter>fgui\dependencies</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\dependencies\input.hh">
-      <Filter>fgui\dependencies</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\dependencies\json.hh">
-      <Filter>fgui\dependencies</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\handler\handler.hh">
-      <Filter>fgui\handler</Filter>
-    </ClInclude>
-    <ClInclude Include="fgui\notifications\notifications.hh">
-      <Filter>fgui\notifications</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\enums\send_prop_type.hh">
-      <Filter>sdk\enums</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\misc\netvar_tree.hh">
-      <Filter>sdk\misc</Filter>
-    </ClInclude>
     <ClInclude Include="core\menu\menu.hh">
       <Filter>core\menu</Filter>
     </ClInclude>
@@ -326,9 +176,6 @@
     <ClInclude Include="core\features\features.hh">
       <Filter>core\features</Filter>
     </ClInclude>
-    <ClInclude Include="sdk\misc\input_helper.hh">
-      <Filter>sdk\misc</Filter>
-    </ClInclude>
     <ClInclude Include="core\hooks\hooks.hh">
       <Filter>core\hooks</Filter>
     </ClInclude>
@@ -338,77 +185,194 @@
     <ClInclude Include="core\mem\mem.hh">
       <Filter>core\mem</Filter>
     </ClInclude>
-    <ClInclude Include="sdk\ifaces\base_client.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\client_class.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\client_entity.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\client_mode.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\convar.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\cvar.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\debug_overlay.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\engine.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\entity.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\global_vars.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\input.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\input_system.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\material.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\material_system.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\panel.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\player_info.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\render_view.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\sound.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\sound_data.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\surface.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\user_cmd.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\utl_vector.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
-    <ClInclude Include="sdk\ifaces\view_setup.hh">
-      <Filter>sdk\ifaces</Filter>
-    </ClInclude>
     <ClInclude Include="core\main\main.hh">
       <Filter>core\main</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\button.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\checkbox.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\colorlist.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\colorpicker.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\combobox.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\container.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\element.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\keybinder.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\label.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\listbox.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\multibox.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\slider.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\spinner.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\tabs.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\controls\textbox.hh">
+      <Filter>dependencies\fgui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\notifications\notifications.hh">
+      <Filter>dependencies\fgui\notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\handler\handler.hh">
+      <Filter>dependencies\fgui\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\dependencies\aliases.hh">
+      <Filter>dependencies\fgui\dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\dependencies\color.hh">
+      <Filter>dependencies\fgui\dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\dependencies\definitions.hh">
+      <Filter>dependencies\fgui\dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\dependencies\input.hh">
+      <Filter>dependencies\fgui\dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\dependencies\json.hh">
+      <Filter>dependencies\fgui\dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\fgui\FGUI.hh">
+      <Filter>dependencies\fgui</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\enums\analog_code.hh">
+      <Filter>core\sdk\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\enums\button.hh">
+      <Filter>core\sdk\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\enums\client_frame_stage.hh">
+      <Filter>core\sdk\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\enums\flags.hh">
+      <Filter>core\sdk\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\enums\font.hh">
+      <Filter>core\sdk\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\enums\move.hh">
+      <Filter>core\sdk\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\enums\send_prop_type.hh">
+      <Filter>core\sdk\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\base_client.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\client_class.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\client_entity.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\client_mode.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\convar.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\cvar.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\debug_overlay.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\engine.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\entity.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\global_vars.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\input.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\input_system.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\material.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\material_system.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\panel.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\player_info.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\render_view.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\sound.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\sound_data.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\surface.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\user_cmd.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\utl_vector.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ifaces\view_setup.hh">
+      <Filter>core\sdk\ifaces</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\misc\capture_iface.hh">
+      <Filter>core\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\misc\input_helper.hh">
+      <Filter>core\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\misc\macros.hh">
+      <Filter>core\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\misc\netvar_tree.hh">
+      <Filter>core\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\misc\render.hh">
+      <Filter>core\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\misc\vector.hh">
+      <Filter>core\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\misc\vfunc_from_index.hh">
+      <Filter>core\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\misc\vmt_hook.hh">
+      <Filter>core\sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\sdk.hh">
+      <Filter>core\sdk</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

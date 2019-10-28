@@ -5,7 +5,7 @@ namespace arcane::core::features {
 		if ( !menu::checkbox[ "#watermark_checkbox" ]->get_bool( ) )
 			return;
 
-		sdk::misc::text( 5, 5, fgui::color( 255, 255, 255 ), sdk::misc::fonts[ sdk::enums::font_watermark ], "arcane - internal csgo cheat base" );
+		sdk::misc::text( 5, 5, fgui::color( 255, 255, 255 ), sdk::misc::fonts[ CONV_TO_TYPE( std::int32_t, sdk::enums::font::font_watermark ) ], "arcane - internal csgo cheat base" );
 	}
 
 	void window( ) {
@@ -54,13 +54,13 @@ namespace arcane::core::features {
 				return;
 
 			if ( menu::checkbox[ "#player_name_checkbox" ]->get_bool( ) )
-				sdk::misc::text( screen.x, screen.y, fgui::color( 255, 150, 0 ), sdk::misc::fonts[ sdk::enums::font_visuals ], player_info.name );
+				sdk::misc::text( screen.x, screen.y, fgui::color( 255, 150, 0 ), sdk::misc::fonts[ CONV_TO_TYPE( std::int32_t, sdk::enums::font::font_visuals ) ], player_info.name );
 
 			if ( menu::checkbox[ "#player_health_checkbox" ]->get_bool( ) )
-				sdk::misc::text( screen.x, screen.y + 15, fgui::color( 255, 255, 255 ), sdk::misc::fonts[ sdk::enums::font_visuals ], fmt::format( "H: {:d}", entity->get_health( ) ) );
+				sdk::misc::text( screen.x, screen.y + 15, fgui::color( 255, 255, 255 ), sdk::misc::fonts[ CONV_TO_TYPE( std::int32_t, sdk::enums::font::font_visuals ) ], fmt::format( "H: {:d}", entity->get_health( ) ) );
 
 			if ( menu::checkbox[ "#player_armor_checkbox" ]->get_bool( ) )
-				sdk::misc::text( screen.x, screen.y + 30, fgui::color( 255, 255, 255 ), sdk::misc::fonts[ sdk::enums::font_visuals ], fmt::format( "A: {:d}", entity->get_armor_value( ) ) );
+				sdk::misc::text( screen.x, screen.y + 30, fgui::color( 255, 255, 255 ), sdk::misc::fonts[ CONV_TO_TYPE( std::int32_t, sdk::enums::font::font_visuals ) ], fmt::format( "A: {:d}", entity->get_armor_value( ) ) );
 		}
 	}
 

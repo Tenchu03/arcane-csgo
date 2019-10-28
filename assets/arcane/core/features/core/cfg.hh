@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../../menu/menu.hh"
-#include "../../../fgui/FGUI.hh"
+#include "../../../dependencies/fgui/FGUI.hh"
 
 namespace arcane::core::features {
 	extern void save_cfg( );

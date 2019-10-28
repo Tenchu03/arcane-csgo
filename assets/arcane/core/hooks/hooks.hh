@@ -6,8 +6,7 @@
 #include "../ifaces/ifaces.hh"
 #include "../mem/mem.hh"
 #include "../features/features.hh"
-#include "../../sdk/misc/macros.hh"
-#include "../../sdk/misc/vmt_hook.hh"
+#include "../sdk/sdk.hh"
 
 namespace arcane::core::hooks {
 	extern std::unique_ptr< sdk::misc::vmt_hook > client;

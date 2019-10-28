@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../sdk/sdk.hh"
+#include "../sdk/sdk.hh"
 
 namespace arcane::core::ifaces {
 	inline struct ifaces {

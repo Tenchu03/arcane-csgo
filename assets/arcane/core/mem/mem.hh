@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../ifaces/ifaces.hh"
-#include "../../sdk/sdk.hh"
+#include "../sdk/sdk.hh"
 
 namespace arcane::core::mem {
 	inline struct mem {

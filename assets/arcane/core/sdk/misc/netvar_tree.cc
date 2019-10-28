@@ -1,6 +1,6 @@
 #include "netvar_tree.hh"
 
-#include "../../core/ifaces/ifaces.hh"
+#include "../../ifaces/ifaces.hh"
 
 namespace arcane::sdk::misc {
 	// https://gist.github.com/AltimorTASDK/55b8b28e552eba0f6162
@@ -27,7 +27,7 @@ namespace arcane::sdk::misc {
 
 			const auto prop_info = std::make_shared< node >( prop->offset );
 
-			if ( prop->recv_type == enums::send_prop_type_data_table )
+			if ( prop->recv_type == CONV_TO_TYPE( std::int32_t, enums::send_prop_type::send_prop_type_data_table ) )
 				populate_nodes( prop->data_table, &prop_info->nodes );
 
 			map->emplace( prop->var_name, prop_info );

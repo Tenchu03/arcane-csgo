@@ -4,9 +4,9 @@
 
 #include "../../ifaces/ifaces.hh"
 #include "../../menu/menu.hh"
-#include "../../../fgui/FGUI.hh"
-#include "../../../fmt/format.hh"
-#include "../../../sdk/sdk.hh"
+#include "../../sdk/sdk.hh"
+#include "../../../dependencies/fgui/FGUI.hh"
+#include "../../../dependencies/fmt/format.hh"
 
 namespace arcane::core::features {
 	extern void watermark( );

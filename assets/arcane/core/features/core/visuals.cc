@@ -25,16 +25,19 @@ namespace arcane::core::features {
 		if ( !local_player )
 			return;
 
-		for ( auto index = 1; index <= ifaces::get_ifaces.engine->get_max_clients( ); index++ ) {
+		for ( auto index = 1; index <= mem::get_mem.global_vars->max_clients; index++ ) {
 			const auto entity = ifaces::get_ifaces.client_entity->get_client_entity( index );
 
 			if ( !entity )
 				continue;
 
+			if ( !( entity->get_health( ) > 0 ) )
+				continue;
+
 			if ( entity == local_player )
 				continue;
 
-			if ( !( entity->get_health( ) > 0 ) )
+			if ( !( local_player->get_team( ) != entity->get_team( ) ) )
 				continue;
 
 			if ( entity->is_dormant( ) )
@@ -49,9 +52,6 @@ namespace arcane::core::features {
 
 			if ( !( ifaces::get_ifaces.debug_overlay->screen_position( entity->get_vec_origin( ), screen ) != 1 ) )
 				continue;
-
-			if ( !( local_player->get_team( ) != entity->get_team( ) ) )
-				return;
 
 			if ( menu::checkbox[ "#player_name_checkbox" ]->get_bool( ) )
 				sdk::misc::text( screen.x, screen.y, fgui::color( 255, 150, 0 ), sdk::misc::fonts[ CONV_TO_TYPE( std::int32_t, sdk::enums::font::font_visuals ) ], player_info.name );

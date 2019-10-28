@@ -12,12 +12,10 @@ namespace arcane::sdk::misc {
 		if ( !module_handle )
 			return { };
 
-		const auto proc_address = GetProcAddress( module_handle, "CreateInterface" );
+		const auto create_interface = reinterpret_cast< T( __cdecl*)( const char*, std::int32_t* ) >( GetProcAddress( module_handle, "CreateInterface" ) );
 
-		if ( !proc_address )
+		if ( !create_interface )
 			return { };
-
-		const auto create_interface = reinterpret_cast< T( __cdecl*)( const char*, std::int32_t* ) >( proc_address );
 
 		return create_interface( interface_name, nullptr );
 	}

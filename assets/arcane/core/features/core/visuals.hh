@@ -3,6 +3,7 @@
 #define FMT_HEADER_ONLY
 
 #include "../../ifaces/ifaces.hh"
+#include "../../mem/mem.hh"
 #include "../../menu/menu.hh"
 #include "../../sdk/sdk.hh"
 #include "../../../dependencies/fgui/FGUI.hh"
